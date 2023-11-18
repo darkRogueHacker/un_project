@@ -1,0 +1,173 @@
+.app__navbar {
+    background-color:#f2f2f2;
+    border-bottom: 5px solid var(--primary);
+    color: #000;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 101;
+}
+
+.app__navbar a {
+    color: inherit;
+    font-size: 14px;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.app__navbar-col.-left a:hover {
+    text-decoration: underline;
+}
+
+.app__navbar-col.-left a {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.app__navbar-link.-active a {
+    font-weight: 600;
+}
+
+.app__navbar svg {
+    font-size: 1.25rem;
+}
+
+.app__navbar-toggle {
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    right: .75rem;
+    top: 12px;
+    z-index: 101;
+}
+
+.app__navbar-toggle span {
+    display: block;
+    border-bottom: 2px solid var(--primary);
+    margin-bottom: .35rem;
+    transition: all .25s ease-in;
+    width: 1.875rem;
+}
+
+.app__navbar-toggle span:last-child {
+    margin-bottom: 0;
+}
+
+.app__navbar.-active .app__navbar-toggle_menu span:first-child {
+    top: 6px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.app__navbar.-active .app__navbar-toggle_menu span:last-child {
+    top: -4px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+
+@media screen and (max-width: 768px) {
+    .app__navbar-col.-right .app__navbar-links {
+        height: 0;
+        overflow: 0;
+        position: relative;
+    }
+
+    .app__navbar-link span {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        -webkit-transition: opacity .2s linear,visibility 0s .2s;
+        -o-transition: opacity .2s linear,visibility 0s .2s;
+        -moz-transition: opacity .2s linear,visibility 0s .2s;
+        transition: opacity .2s linear,visibility 0s .2s;
+    }
+
+    .app__navbar.-active {
+        border-bottom: 1px solid var(--color-white);
+    }
+
+    .app__navbar.-active .app__navbar-col.-right .app__navbar-links {
+        background-color: #f2f2f2;
+        border-bottom: 5px solid var(--primary);
+        height: max-content;
+        left: 0;
+        position: fixed;
+        padding: .75rem;
+        top: 36px;
+        width: 100%;
+        width: calc(100% - 1.5rem);
+
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .app__navbar.-active .app__navbar-row {
+        align-items: flex-start;
+    }
+
+    .app__navbar.-active .app__navbar-link span {
+        opacity: 1;
+        visibility: visible;
+        -webkit-transform: translateY(0) translateZ(0);
+        -moz-transform: translateY(0) translateZ(0);
+        transform: translateY(0) translateZ(0);
+    }
+
+
+    /* HAMBURGER BUTTON */
+    .app__navbar-toggle {
+        display: block;
+    }
+
+    .app__navbar.-active .app__navbar-link:nth-child(1) span {
+        -webkit-transition-delay: .25s;
+        -moz-transition-delay: .25s;
+        -o-transition-delay: .25s;
+        transition-delay: .25s;
+    }
+
+    .app__navbar.-active .app__navbar-link:nth-child(2) span {
+        -webkit-transition-delay: .3s;
+        -moz-transition-delay: .3s;
+        -o-transition-delay: .3s;
+        transition-delay: .3s;
+    }
+    .app__navbar.-active .app__navbar-link:nth-child(3) span {
+        -webkit-transition-delay: .35s;
+        -moz-transition-delay: .35s;
+        -o-transition-delay: .35s;
+        transition-delay: .35s;
+    }
+    .app__navbar.-active .app__navbar-link:nth-child(4) span {
+        -webkit-transition-delay: .4s;
+        -moz-transition-delay: .4s;
+        -o-transition-delay: .4s;
+        transition-delay: .4s;
+    }
+    .app__navbar.-active .app__navbar-link:nth-child(5) span {
+        -webkit-transition-delay: .45s;
+        -moz-transition-delay: .45s;
+        -o-transition-delay: .45s;
+        transition-delay: .45s;
+    }
+    .app__navbar.-active .app__navbar-link:nth-child(6) span {
+        -webkit-transition-delay: .5s;
+        -moz-transition-delay: .5s;
+        -o-transition-delay: .5s;
+        transition-delay: .5s;
+    }
+    .app__navbar.-active .app__navbar-link:nth-child(7) span {
+        -webkit-transition-delay: .55s;
+        -moz-transition-delay: .55s;
+        -o-transition-delay: .55s;
+        transition-delay: .55s;
+    }
+}

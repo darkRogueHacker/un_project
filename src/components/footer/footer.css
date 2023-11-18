@@ -1,0 +1,96 @@
+.app__footer {
+  background-color: var(--dark);
+  border-top: 0.4rem solid var(--primary);
+  margin-top: 4rem;
+}
+
+.app__footer-row:first-child {
+  margin-bottom: 0.6rem;
+}
+
+.app__footer-row:last-child {
+  padding: 16px 0 0;
+  border-top: gray solid 0.03rem;
+}
+
+.app__footer-col.logo img {
+  height: 3.1rem;
+  width: 10rem;
+}
+
+.app__footer-col .btn {
+  border-left: gray solid 0.1rem;
+  margin-left: 2.8rem;
+  padding-left: 2rem;
+}
+
+.app__footer-col .btn button {
+  background-color: white;
+  border: 1px solid var(--primary);
+  border-radius: var(--br-0);
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 9px 20px 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.app__footer-links {
+  flex-wrap: wrap;
+}
+
+.app__footer-link {
+  border-right: 3px solid rgb(128, 128, 128);
+  padding: 0 0.8rem 0 0.8rem;
+}
+
+.app__footer-link:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+
+.app__footer-link a {
+  color: white;
+  font-weight: inherit;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.app__footer-social_link a {
+  color: var(--gray);
+}
+
+.app__footer-social_link a svg {
+  font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .app__footer-container {
+    padding-bottom: 88px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .app__footer-col .btn {
+    margin-bottom: 1.5rem;
+    margin-left: 6rem;
+  }
+
+  .app__footer-social_links {
+    margin-bottom: 0.6rem;
+  }
+
+  .app__footer-link a {
+    font-size: 13px;
+  }
+
+  .app__footer-row:first-child .app__footer-col:last-child {
+    flex-direction: column-reverse;
+  }
+
+  .app__footer-row:first-child {
+    align-items: flex-start;
+  }
+}
