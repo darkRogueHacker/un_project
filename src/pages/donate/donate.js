@@ -15,12 +15,15 @@ const DonatePage = () => {
   const [copied, setCopied] = useState(false);
 
   const handleCopyClick = () => {
-    navigator.clipboard.writeText(walletAddress);
-    setCopied(true);
-    setTimeout(() => {
-      setCopied(false);
-    }, 2000);
+    navigator.clipboard.writeText(walletAddress).then(() => {
+      setCopied(true);
+      setTimeout(() => {
+        setCopied(false);
+      }, 2000);
+    });
   };
+
+
   return (
     <div>
       <>
@@ -59,22 +62,19 @@ const DonatePage = () => {
       <div className='d-flex justify-center item-center'>
         <div className="donate-container">
           <h1>Support Our Cause with Crypto</h1>
-          <p className="instruction-text">Follow the instructions below to make a BTC donation:</p>
-
-          {/* Your cool instruction texts go here */}
+          <p className="instruction-text">Scan the barcode below to make a BTC donation</p>
 
           <div className="barcode-container">
-            {/* BTC Barcode image goes here */}
             <img className="barcode" src="your-btc-barcode-image-url.jpg" alt="BTC Barcode" />
           </div>
 
           <div className="wallet-info">
-            <p>Your BTC Wallet Address:</p>
+            <p>Or copy the BTC Wallet Address</p>
             <div className="address-container">
               <span className="wallet-address">{walletAddress}</span>
               <button className="copy-icon" onClick={handleCopyClick}>
                 <AiFillCopy />
-                {copied && <span className="copied-popup">Copied!</span>}
+                <span className={`copied-popup ${copied ? 'show' : ''}`}>Copied!</span>
               </button>
             </div>
           </div>

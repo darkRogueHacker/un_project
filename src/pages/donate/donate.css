@@ -75,14 +75,17 @@
 
 .copied-popup {
   position: absolute;
-  top: -30px;
-  right: 0;
-  background-color: #4caf50;
+  background-color: #428bca;
   color: #fff;
-  padding: 8px;
+  padding: 10px;
   border-radius: 5px;
+  font-size: 14px;
   opacity: 0;
   transition: opacity 0.5s;
+}
+
+.copied-popup.show {
+  opacity: 1;
 }
 
 .donation-message {
