@@ -39,7 +39,6 @@
 .profile__section img {
   height: 350px;
   width: 300px;
-  float: right;
 }
 
 .profile__section-text {
@@ -79,15 +78,19 @@
   .profile__section {
     flex-direction: column;
   }
-
-  .profile__section img {
-    float: initial;
-  }
 }
 
 @media screen and (max-width: 768px) {
-  .profile__header-row .profile__header-col.left > div.d-flex {
+  .profile__header-row .profile__header-col.left>div.d-flex {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .profile__section {
+    margin: 2rem;
+  }
+
+  .profile__section-text .text {
+    max-width: 100%;
   }
 }

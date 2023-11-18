@@ -1,13 +1,26 @@
+import React, { useState } from 'react';
 import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
 import { Link } from "react-router-dom";
 
 import un_logo from "../../assets/UN-logo.svg";
 import un_text from "../../assets/UN-text-EN.svg";
+import { AiFillCopy } from "react-icons/ai";
+
 
 import "./donate.css";
 
 const DonatePage = () => {
+  const [walletAddress, setWalletAddress] = useState('0xB8b69925e10dc9ef587A3DaDD3AD4Ce488d106c2');
+  const [copied, setCopied] = useState(false);
+
+  const handleCopyClick = () => {
+    navigator.clipboard.writeText(walletAddress);
+    setCopied(true);
+    setTimeout(() => {
+      setCopied(false);
+    }, 2000);
+  };
   return (
     <div>
       <>
@@ -42,9 +55,34 @@ const DonatePage = () => {
           </div>
         </div>
       </>
-      <div className="donation__page">
-        <div className="donation__page-text">Donation Page</div>
+
+      <div className='d-flex justify-center item-center'>
+        <div className="donate-container">
+          <h1>Support Our Cause with Crypto</h1>
+          <p className="instruction-text">Follow the instructions below to make a BTC donation:</p>
+
+          {/* Your cool instruction texts go here */}
+
+          <div className="barcode-container">
+            {/* BTC Barcode image goes here */}
+            <img className="barcode" src="your-btc-barcode-image-url.jpg" alt="BTC Barcode" />
+          </div>
+
+          <div className="wallet-info">
+            <p>Your BTC Wallet Address:</p>
+            <div className="address-container">
+              <span className="wallet-address">{walletAddress}</span>
+              <button className="copy-icon" onClick={handleCopyClick}>
+                <AiFillCopy />
+                {copied && <span className="copied-popup">Copied!</span>}
+              </button>
+            </div>
+          </div>
+
+          <p className="donation-message">Thank you for supporting our cause. Your contribution makes a difference!</p>
+        </div>
       </div>
+
       <Footer />
     </div>
   );

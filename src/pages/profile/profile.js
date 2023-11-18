@@ -44,11 +44,11 @@ const ProfilePage = () => {
         </div>
       </>
       <div>
-        <div className="profile__section d-flex gap-2 justify-between">
-          <div className="flex-1">
+        <div className="profile__section d-flex gap-2 item-center justify-center">
+          <div className="item-center justify-center">
             <img src={profile_photo} alt="profile-img" />
           </div>
-          <div className="profile__section-text flex-1">
+          <div className="profile__section-text item-center justify-center">
             <h4 className="my-1">Alain Hector</h4>
             <p className="mb-0">
               <span>Duty Station:</span> NEW YORK
@@ -78,11 +78,11 @@ const ProfilePage = () => {
             </p>
           </div>
         </div>
-        <div className="profile__section d-flex gap-2 justify-between">
-          <div className="flex-1">
+        <div className="profile__section d-flex gap-2 item-center justify-center flex-row-reverse">
+          <div className="item-center justify-center">
             <img src={profile_photo} alt="profile-img" />
           </div>
-          <div className="profile__section-text flex-1">
+          <div className="profile__section-text item-center justify-center">
             <h4 className="my-1">Alain Hector</h4>
             <p className="mb-0">
               <span>Duty Station:</span> NEW YORK
@@ -112,11 +112,45 @@ const ProfilePage = () => {
             </p>
           </div>
         </div>
-        <div className="profile__section d-flex gap-2 justify-between">
-          <div className="flex-1">
+        <div className="profile__section d-flex gap-2 item-center justify-center">
+          <div className="item-center justify-center">
             <img src={profile_photo} alt="profile-img" />
           </div>
-          <div className="profile__section-text flex-1">
+          <div className="profile__section-text item-center justify-center">
+            <h4 className="my-1">Alain Hector</h4>
+            <p className="mb-0">
+              <span>Duty Station:</span> NEW YORK
+            </p>
+            <p className="mb-0">
+              <span>Department:</span> Department of Safety and Security.
+            </p>
+            <p className="text">
+              <span>Biography: </span>
+              My journey as a Security Information Analyst with United Nations
+              Department for Safety and Security (UNDSS) started in May 2010,
+              and has certainly been a very interesting and enriching one with
+              lots to learn, experience, receive, and give in three different
+              countries and regions. I had a background in research and analysis
+              in the public and private sector including the CIA before I joined
+              UNDSS, which included working for a think tank under the Indian
+              Defense Ministry in New Delhi, where I specialized in
+              counterterrorism policies and conflict management/resolution,
+              private risk consultancies such as Hill and Associates, and
+              International SOS in South Asia, and research institutes such as
+              the Institute for Counter Terrorism in Israel. I was asked to join
+              UNDSS for the newly created position of security analyst in late
+              2009. My first assignment for UNDSS was in Philippines , where I
+              spent seven years covering the region and filled in as the Field
+              Security Coordination Officer (FSCO) for Mindanao and acting
+              Deputy Security Advisor (DSA) in their absence.
+            </p>
+          </div>
+        </div>
+        <div className="profile__section d-flex gap-2 item-center justify-center flex-row-reverse">
+          <div className="item-center justify-center">
+            <img src={profile_photo} alt="profile-img" />
+          </div>
+          <div className="profile__section-text item-center justify-center">
             <h4 className="my-1">Alain Hector</h4>
             <p className="mb-0">
               <span>Duty Station:</span> NEW YORK

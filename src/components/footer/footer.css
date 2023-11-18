@@ -75,7 +75,6 @@
 
   .app__footer-col .btn {
     margin-bottom: 1.5rem;
-    margin-left: 6rem;
   }
 
   .app__footer-social_links {
@@ -94,3 +93,11 @@
     align-items: flex-start;
   }
 }
+
+
+/* @media screen and (max-width: 560px) {
+  .app__footer-col .btn {
+    margin-bottom: 1.5rem;
+    padding-left: 0;
+  }
+} */
