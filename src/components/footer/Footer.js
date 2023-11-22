@@ -12,9 +12,9 @@ import { IoLogoFlickr } from "react-icons/io";
 
 const Footer = () => {
   return (
-    <footer className="app__footer">
-      <div className="app__footer-container py-7 px-8">
-        <div className="app__footer-row d-flex item-center justify-between gap-2">
+    <footer className="app__footer py-7 px-8">
+      <div className="app__footer-container">
+        <div className="app__footer-row d-flex item-center justify-between">
           <div className="app__footer-col logo">
             <Link to="https://www.un.org">
               <img src={un_logo} alt="UN logo" />

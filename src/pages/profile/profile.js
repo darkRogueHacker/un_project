@@ -1,6 +1,8 @@
 import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
 import { Link } from "react-router-dom";
+import { BsFacebook } from "react-icons/bs";
+
 
 import un_logo from "../../assets/UN-logo.svg";
 import un_text from "../../assets/UN-text-EN.svg";
@@ -80,6 +82,15 @@ const ProfilePage = () => {
               Security Coordination Officer (FSCO) for Mindanao and acting
               Deputy Security Advisor (DSA) in their absence.
             </p>
+            <div className="profile_link mt-2">
+              <a
+                href="https://web.facebook.com/joshua.onuh.52493?mibextid=LQQJ4d&_rdc=1&_rdr"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <BsFacebook className="icon" />
+              </a>
+            </div>
           </div>
         </div>
         <div className="profile__section d-flex gap-2 item-center justify-center flex-row-reverse">

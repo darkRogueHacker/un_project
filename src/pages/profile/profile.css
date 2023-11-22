@@ -58,6 +58,19 @@
   max-width: 700px;
 }
 
+.profile_link a {
+  color: #428bca;
+  transition: 0.5s ease;
+}
+
+.profile_link a:hover {
+  color: var(--gray);
+}
+
+.profile_link a svg {
+  font-size: 24px;
+}
+
 @media screen and (max-width: 992px) {
   .profile__header {
     margin-left: 1rem;

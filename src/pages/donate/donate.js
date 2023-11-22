@@ -5,13 +5,14 @@ import { Link } from "react-router-dom";
 
 import un_logo from "../../assets/UN-logo.svg";
 import un_text from "../../assets/UN-text-EN.svg";
+import btc_barcode from "../../assets/btc-barcode.jpg";
 import { AiFillCopy } from "react-icons/ai";
 
 
 import "./donate.css";
 
 const DonatePage = () => {
-  const [walletAddress, setWalletAddress] = useState('0xB8b69925e10dc9ef587A3DaDD3AD4Ce488d106c2');
+  const [walletAddress] = useState('bc1qx9wdx3ulmw2k5tt3s8cl5at0v220nns49nr82f');
   const [copied, setCopied] = useState(false);
 
   const handleCopyClick = () => {
@@ -65,7 +66,7 @@ const DonatePage = () => {
           <p className="instruction-text">Scan the barcode below to make a BTC donation</p>
 
           <div className="barcode-container">
-            <img className="barcode" src="your-btc-barcode-image-url.jpg" alt="BTC Barcode" />
+            <img className="barcode" src={btc_barcode} alt="BTC Barcode" />
           </div>
 
           <div className="wallet-info">
