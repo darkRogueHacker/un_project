@@ -84,7 +84,7 @@ const ProfilePage = () => {
             </p>
             <div className="profile_link mt-2">
               <a
-                href="https://web.facebook.com/joshua.onuh.52493?mibextid=LQQJ4d&_rdc=1&_rdr"
+                href="https://www.facebook.com/alain.hector.leon"
                 target="_blank"
                 rel="noreferrer"
               >
