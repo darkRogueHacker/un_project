@@ -88,7 +88,8 @@ const ProfilePage = () => {
           </div>
         </div>
       </>
-      <div>
+      <div className="profile">
+        <h3 className="profile__heading">Meet Our Staff</h3>
         {profilesData.map((profileData, index) => (
           <div key={index} className="profile__section d-flex gap-2 item-center justify-center">
             <div className="profile__section-title flex-1">

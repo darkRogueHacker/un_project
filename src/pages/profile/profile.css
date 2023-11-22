@@ -32,8 +32,27 @@
   text-decoration: none;
 }
 
-.profile__section {
+.profile {
   margin: 5rem;
+}
+
+.profile__heading {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.profile__heading::after {
+  content: "";
+  display: block;
+  margin-left: 1px;
+  margin-top: 0.875rem;
+  border-top: var(--primary) solid 3px;
+  width: 33%;
+  max-width: 100px;
+}
+
+.profile__section {
+  margin-top: 3rem;
   font-size: 14px;
   border: 1px solid #ddd;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -93,11 +112,18 @@
     margin-left: 1rem;
   }
 
+  .profile {
+    margin: 1rem;
+  }
+
   .profile__section {
     flex-direction: column;
     border: none;
     box-shadow: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
+
 }
 
 @media screen and (max-width: 768px) {
