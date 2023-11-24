@@ -67,7 +67,7 @@
   font-size: 24px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .app__footer {
     padding-bottom: 88px;
     padding-left: 1rem;
@@ -100,5 +100,17 @@
   .app__footer {
     padding-left: .5rem;
     padding-right: .5rem;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .app__footer {
+    width: 430px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .app__footer {
+    width: 385px;
   }
 }

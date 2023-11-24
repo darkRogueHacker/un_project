@@ -80,7 +80,11 @@ const DonatePage = () => {
             </div>
           </div>
 
-          <p className="donation-message">Thank you for supporting our cause. Your contribution makes a difference!</p>
+          <div>
+            <p>For further inquiries regarding donation procedures or assistance, contact us <a href='mailto:unitednationscct@gmail.com'>here</a></p>
+          </div>
+
+          <p className="donation-message">Thank you for considering a donation and helping us make a positive impact. Your contribution makes a difference!</p>
         </div>
       </div>
 
