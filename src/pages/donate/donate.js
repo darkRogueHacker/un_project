@@ -49,7 +49,8 @@ const DonatePage = () => {
 
                   <div className="donate__header-topic">
                     <a href="/donation-page">
-                      <span> Donation </span>
+                      <span> Peace, dignity and equality <br />
+                        on a healthy planet </span>
                     </a>
                   </div>
                 </div>
@@ -60,31 +61,34 @@ const DonatePage = () => {
         </div>
       </>
 
-      <div className='d-flex justify-center item-center'>
-        <div className="donate-container">
-          <h1>Support Our Cause with Crypto</h1>
-          <p className="instruction-text">Scan the barcode below to make a BTC donation</p>
+      <div>
+        <h3 className='donate__heading'>How to Donate to the United Nations System</h3>
 
-          <div className="barcode-container">
-            <img className="barcode" src={btc_barcode} alt="BTC Barcode" />
-          </div>
+        <div className='d-flex justify-center item-center'>
+          <div className="donate-container">
+            <p className="instruction-text">Scan the barcode below to make a BTC donation</p>
 
-          <div className="wallet-info">
-            <p>Or copy the BTC Wallet Address</p>
-            <div className="address-container">
-              <span className="wallet-address">{walletAddress}</span>
-              <button className="copy-icon" onClick={handleCopyClick}>
-                <AiFillCopy />
-                <span className={`copied-popup ${copied ? 'show' : ''}`}>Copied!</span>
-              </button>
+            <div className="barcode-container">
+              <img className="barcode" src={btc_barcode} alt="BTC Barcode" />
             </div>
-          </div>
 
-          <div>
-            <p>For further inquiries regarding donation procedures or assistance, contact us <a href='mailto:unctu@unctu.org'>here</a></p>
-          </div>
+            <div className="wallet-info">
+              <p>Or copy the BTC Wallet Address</p>
+              <div className="address-container">
+                <span className="wallet-address">{walletAddress}</span>
+                <button className="copy-icon" onClick={handleCopyClick}>
+                  <AiFillCopy />
+                  <span className={`copied-popup ${copied ? 'show' : ''}`}>Copied!</span>
+                </button>
+              </div>
+            </div>
 
-          <p className="donation-message">Thank you for considering a donation and helping us make a positive impact. Your contribution makes a difference!</p>
+            <div>
+              <p>For further inquiries regarding donation procedures or assistance, contact us <a href='mailto:unctu@unctu.org'>here</a></p>
+            </div>
+
+            <p className="donation-message">Thank you for considering a donation and helping us make a positive impact. Your contribution makes a difference!</p>
+          </div>
         </div>
       </div>
 

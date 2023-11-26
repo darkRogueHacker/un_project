@@ -34,6 +34,22 @@
 
 /* styles for DonatePage component */
 
+.donate__heading {
+  font-weight: 600;
+  font-size: 2rem;
+  margin-left: 4rem;
+}
+
+.donate__heading::after {
+  content: "";
+  display: block;
+  margin-left: 1px;
+  margin-top: 0.875rem;
+  border-top: var(--primary) solid 3px;
+  width: 33%;
+  max-width: 100px;
+}
+
 .donate-container {
   min-height: 50vh;
   display: flex;
@@ -118,5 +134,9 @@
   .donate__header-row .donate__header-col.left>div.d-flex {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .donate__heading {
+    margin-left: 2rem;
   }
 }
