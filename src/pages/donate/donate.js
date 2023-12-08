@@ -84,7 +84,7 @@ const DonatePage = () => {
             </div>
 
             <div>
-              <p>For further inquiries regarding donation procedures or assistance, contact us <a href='mailto:unctu@unctu.org'>here</a></p>
+              <p>For further inquiries regarding donation procedures or assistance, contact us <a href='mailto:unoct@unoct.org'>here</a></p>
             </div>
 
             <p className="donation-message">Thank you for considering a donation and helping us make a positive impact. Your contribution makes a difference!</p>
